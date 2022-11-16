@@ -102,12 +102,14 @@ class TweetCard extends StatelessWidget {
                   "${time} . ",
                   style: TextStyle(
                     fontSize: 17.5,
+                    color: Colors.grey[700]
                   ),
                 ),
                 Text(
                   "${date} . ",
                   style: TextStyle(
                     fontSize: 17.5,
+                    color: Colors.grey[700]
                   ),
                 ),
                 Text(
