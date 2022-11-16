@@ -37,6 +37,7 @@ class TweetCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      elevation: 5,
       margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),

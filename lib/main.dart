@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Twitter',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.blue[50],
         appBar: AppBar(
           elevation: 0,
           toolbarHeight: 75,
