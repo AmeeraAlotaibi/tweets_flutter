@@ -3,12 +3,16 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 class IconContainer extends StatelessWidget {
-  IconContainer({required this.icon, required this.counter, super.key});
-  
+  IconContainer({
+    required this.icon, 
+    required this.counter, 
+    this.iconColor = Colors.black, super.key});
+
   // Added variables to use it in the widget.
   // and these variables are required in the constructor
   final IconData icon;
   final String counter;
+  final Color iconColor;
 
   @override
   Widget build(BuildContext context) {
@@ -19,6 +23,7 @@ class IconContainer extends StatelessWidget {
           Icon(
             icon,
             size: 30,
+            color: iconColor,
           ),
           SizedBox(
             width: 3.5,

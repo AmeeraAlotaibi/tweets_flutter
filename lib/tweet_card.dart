@@ -16,6 +16,7 @@ class TweetCard extends StatelessWidget {
     this.retweetsCounter = "0",
     this.likesCounter = "0",
     this.commentsCounter = "0",
+    this.footerColor,
   });
 
   final String image;
@@ -31,6 +32,7 @@ class TweetCard extends StatelessWidget {
   final String retweetsCounter;
   final IconData commentsIcon = Icons.mode_comment_outlined;
   final String commentsCounter;
+  Color? footerColor;
 
   @override
   Widget build(BuildContext context) {
@@ -109,7 +111,7 @@ class TweetCard extends StatelessWidget {
                 ),
                 Text(
                   device,
-                  style: TextStyle(fontSize: 17.5, color: Colors.cyan),
+                  style: TextStyle(fontSize: 17.5, color: footerColor),
                 ),
               ],
             ),
@@ -125,10 +127,12 @@ class TweetCard extends StatelessWidget {
                 IconContainer(
                   icon: likesIcon,
                   counter: likesCounter,
+                  iconColor: Colors.red,
                 ),
                 IconContainer(
                   icon: retweetsIcon,
                   counter: retweetsCounter,
+                  iconColor: Colors.green,
                 ),
                 // Expanded was used here to take all the space between the two icons above and the one below
                 Expanded(
@@ -140,10 +144,13 @@ class TweetCard extends StatelessWidget {
                 IconContainer(
                   icon: commentsIcon,
                   counter: commentsCounter,
+                  iconColor: Colors.blue,
                 ),
               ],
             ),
-            SizedBox(height: 5,),
+            SizedBox(
+              height: 5,
+            ),
           ],
         ),
       ),

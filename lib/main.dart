@@ -34,6 +34,7 @@ class MyApp extends StatelessWidget {
                   time: "10:45 AM", 
                   date: "2022-11-16", 
                   device: "Twitter for Wizards",
+                  footerColor: Colors.grey[900],
                   likesCounter: "56,353",
                   retweetsCounter: "10,435",
                   commentsCounter: "1,674",
@@ -51,6 +52,7 @@ class MyApp extends StatelessWidget {
                   likesCounter: "180",
                   retweetsCounter: "65",
                   commentsCounter: "13",
+                  footerColor: Colors.cyan,
                   ),
                 
                 // third tweet card 
@@ -65,6 +67,7 @@ class MyApp extends StatelessWidget {
                   likesCounter: "204",
                   retweetsCounter: "106",
                   commentsCounter: "43",
+                  footerColor: Colors.green,
                   ),
               ],
             ),
